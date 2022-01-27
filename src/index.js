@@ -9,5 +9,4 @@ document.getElementById("btnValidation").addEventListener("click", () => {
     validator.isValid(tcNumber);
 
   }
-  console.log("eL VALOR ES",tcNumber);
 });
