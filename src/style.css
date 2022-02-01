@@ -1,14 +1,93 @@
-*{
-  background: rgb(182, 136, 182);
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=EB+Garamond:ital@0;1&display=swap');
+* {
+  background: white;
 }
 footer {
+  background: transparent;
   position: fixed;
   bottom: 0;
-  font-size: 15px;
-  font-weight: bold;  
-  color: purple;
-  font-family: cursive;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgba(104, 99, 109, 0.63) ;
+  text-shadow: ;
+  font-family: 'Cookie', cursive;
   text-align: center;
   width: 100%;
   height: 60px;
+  text-shadow:  -1px 0 rgb(160, 153, 153), 0 1px rgba(158, 60, 219, 0.445) ;
+}
+.pageFormato {
+  position: relative;
+  /*   border: 5px solid black; */
+  height: 98vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.imagFondo {
+  background-image: url("Img/firstImage.jpg");
+  background-size: 100% 100%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px 20px 20px 20px;
+}
+.formStyle {
+  text-align: center;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+}
+#logoImg{
+ /*  border: 2px solid red; */
+  margin-top: 50px;
+}
+.titleHeader {
+  font-family: 'Cookie', cursive;
+  color: rgba(59, 54, 63, 1);
+  font-size: 110px;
+  width: 80%;
+  height: 30%;
+  display: inline-block;
+  margin: 2px;
+  padding: 0;
+}
+.formValidate{
+  border: 2px solid rgba(159, 60, 219, 0.49);
+  width: 50%;
+  height: 30%;
+  display: inline-block;
+  border-radius: 20px 20px 20px 20px;
+}
+#textOne {
+  font-family: Poppins;
+  color: rgba(71, 33, 95, 0.51);
+  font-size: 30px;
+}
+.inputFormat {
+  background-color: rgba(158, 60, 219, 0.445);
+  border: 3px transparent;
+  border-radius: 50px 50px 50px 50px;
+  height: 20%;
+  width: 74%;
+  box-shadow: 3px 8px 9px rgb(109, 104, 102);
+  font-family:Poppins;
+  color: rgba(87, 87, 87, 1);
+  text-align: center;
+  font-size: 25px;
+}
+#btnValidation {
+  background-color: rgba(159, 60, 219, 0.26);
+  border-radius: 50px 50px 50px 50px;
+  height: 15%;
+  width: 35%;
+  color: rgba(87, 87, 87, 1);
+  text-align: center;
+  font-size: 25px;
+  box-shadow: 3px 8px 9px rgb(109, 104, 102);
+  font-family: Poppins;
 }
