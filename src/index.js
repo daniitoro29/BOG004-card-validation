@@ -4,12 +4,19 @@ document.getElementById("btnValidation").addEventListener("click", () => {
   if (tcNumber=== "") {
     alert("Upssss, no has ingresado tu TC");
   } else{
-    if(validator.isValid(tcNumber)){
-      alert("La tarjeta es válida")
-    } else {
-      alert("Upsss tu tajeta es inválida, intenta con otra tarjeta")
-    }
     let maskifyNumber = validator.maskify(tcNumber);
     document.getElementById("numberCard").value = maskifyNumber;
+    if(validator.isValid(tcNumber)){
+      document.getElementById("oneSection").style.display="none" 
+      document.getElementById("twoSection").style.display="block"
+      document.getElementById("tcValid").innerText = maskifyNumber;
+    } else {
+      document.getElementById("oneSection").style.display="none" 
+      document.getElementById("threeSection").style.display="block"
+      document.getElementById("tcInvalid").innerText = maskifyNumber;
+    }
   }
+});
+document.getElementById("btnThree").addEventListener("click",() =>{
+  document.getElementById("oneSection").style.display="block"
 });

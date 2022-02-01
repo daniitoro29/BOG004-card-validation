@@ -7,15 +7,14 @@
   </head>
   <body>
     <main>
-      <section class="pageFormato">
-          <div class="imagFondo">
-<!--             <img src="Img\Imagén de fondo.jpg" alt="Logo" class="imagenFormat"/> -->
+      <section class="pageFormato" id="oneSection">
+          <div id="imagOne">
           </div>
           <div class="formStyle">
             <img src="Img\Pet's.png" alt="Logo" width="200px" id="logoImg" />
             <br>
             <h1 class="titleHeader">Pet Lovers Store</h1>
-            <div class="formValidate">
+            <div id="formOne">
               <h2 id="textOne">Vamos a realizar el pago</h2>
               <input
                 class="inputFormat"
@@ -27,10 +26,43 @@
               />
               <br>
               <br>
+              <br>
               <button id="btnValidation" type="button">Validar</button>
             </div>
           </div>
       </section>
+
+      <section class="pageFormato" id="twoSection">
+        <div id="imagTwo">
+        </div>
+        <div class="formStyle">
+          <img src="Img\Pet's.png" alt="Logo" width="200px" id="logoImg" />
+          <br>
+          <img src="Img\true.JPG" alt="Logo" width="80px" id="resultImag" />
+          <br>
+          <div id="formTwo">
+            <h2 id="textTwo">Guauuuuuu... Tu tarjeta <b id="tcValid"></b> es válida...</h2>
+            <br>
+            <button id="btnTwo" type="button">Empieza a comprar</button>
+          </div>
+        </div>
+    </section>
+
+    <section class="pageFormato" id="threeSection">
+      <div id="imagThree">
+      </div>
+      <div class="formStyle">
+        <img src="Img\Pet's.png" alt="Logo" width="200px" id="logoImg" />
+        <br>
+        <img src="Img\false.JPG" alt="Logo" width="80px" id="resultImag" />
+        <br>
+        <div id="formThree">
+          <h2 id="textThree">Miauuuu... Tu tarjeta  <b id="tcInvalid"></b>  es inválida...</h2>
+          <br>
+          <button id="btnThree" type="button">Intenta nuevamente</button>
+        </div>
+      </div>
+  </section>
       <footer>Made by Danii</footer>
     </main>
     <script src="\index.js" type="module"></script>
