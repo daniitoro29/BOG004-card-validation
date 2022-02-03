@@ -40,6 +40,14 @@ const validator = {
       creditCardNumberString += "#";
     }
     return creditCardNumberString+creditCardNumberNoMask;
+  },
+
+  isNumber: (creditCardNumber) =>{
+    if(isNaN(creditCardNumber)){
+      return false;
+    }else{
+      return true;
+    }
   }
 };
 export default validator;
