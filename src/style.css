@@ -51,11 +51,11 @@ footer {
   height: 100%;
   right: 0;
 }
-#logoImg{
+.logoImg{
  /*  border: 2px solid red; */
   margin-top: 50px;
 }
-#resultImag{
+.resultImag{
   margin-top: 20px;
   margin-bottom: 30px;
 }

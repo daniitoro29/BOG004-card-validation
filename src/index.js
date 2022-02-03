@@ -17,6 +17,13 @@ document.getElementById("btnValidation").addEventListener("click", () => {
     }
   }
 });
-document.getElementById("btnThree").addEventListener("click",() =>{
+document.getElementById("btnTwo").addEventListener("click",() =>{
+  document.getElementById("twoSection").style.display="none"
   document.getElementById("oneSection").style.display="block"
+  document.getElementById("numberCard").value="";
+});
+document.getElementById("btnThree").addEventListener("click",() =>{
+  document.getElementById("threeSection").style.display="none"
+  document.getElementById("oneSection").style.display="block"
+  document.getElementById("numberCard").value="";
 });
