@@ -17,7 +17,7 @@ document.getElementById("btnValidation").addEventListener("click", () => {
         document.getElementById("tcInvalid").innerText = maskifyNumber;
       }
     }else{
-      alert("Por favor ingresa un número de TC válido");
+      myFunction("Por favor ingresa un número de TC válido");
       document.getElementById("numberCard").value="";
     }
   }
@@ -32,3 +32,13 @@ document.getElementById("btnThree").addEventListener("click",() =>{
   document.getElementById("oneSection").style.display="block"
   document.getElementById("numberCard").value="";
 });
+let myFunction = (msj) => {
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
+x.innerText=msj
+  // Add the "show" class to DIV
+  x.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
